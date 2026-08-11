@@ -80,7 +80,7 @@ const Work = () => {
               description:
                 "An interactive annual sales report for Vrinda Store with month, channel, and category filters. The dashboard tracks orders, sales amount, gender-wise purchases, order status, top-performing states, age groups, and channel contribution.",
               tech: "Excel, Pivot Tables, Pivot Charts, Slicers, Dashboard Design, Sales Analysis",
-              image: "/images/project-vrinda-store.svg",
+              image: "/images/project-vrinda-store.jpeg",
             },
             {
               name: "HR Analytics Dashboard",

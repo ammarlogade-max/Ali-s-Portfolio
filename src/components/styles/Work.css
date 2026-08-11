@@ -154,8 +154,9 @@
   max-width: 100%;
   max-height: min(280px, 30vh);
   border-radius: 8px;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
+  background: #fff;
 }
 .work-play-overlay {
   position: absolute;
