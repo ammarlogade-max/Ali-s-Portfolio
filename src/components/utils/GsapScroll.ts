@@ -40,6 +40,15 @@ export function setCharTimeline(
 
   if (window.innerWidth > 1024) {
     if (character) {
+      const avatarFaceBlend = character.userData.avatarFaceBlend as
+        | { front: number; right: number }
+        | undefined;
+      const applyAvatarFaceBlend = () => {
+        if (typeof character.userData.applyAvatarFaceBlend === "function") {
+          character.userData.applyAvatarFaceBlend();
+        }
+      };
+
       tl1
         .fromTo(character.rotation, { y: 0, x: 0 }, { y: 0, x: 0, duration: 1 }, 0)
         .to(camera.position, { z: 6 }, 0)
@@ -49,6 +58,12 @@ export function setCharTimeline(
         .to(".landing-intro", { y: "40%", duration: 0.8 }, 0)
         .to(".landing-info", { y: "40%", duration: 0.8 }, 0)
         .fromTo(".about-me", { y: "-50%" }, { y: "0%" }, 0);
+
+      if (avatarFaceBlend) {
+        tl1
+          .to(avatarFaceBlend, { front: 0, duration: 0.15, onUpdate: applyAvatarFaceBlend }, 0.55)
+          .to(avatarFaceBlend, { right: 1, duration: 0.15, onUpdate: applyAvatarFaceBlend }, 0.55);
+      }
 
       tl2
         .to(

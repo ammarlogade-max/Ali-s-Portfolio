@@ -20,6 +20,8 @@ export function createRikinCharacter(
 ): CharacterRefs {
   const character = new THREE.Group();
   character.name = "rikin-character";
+  const faceBlend = { front: 1, right: 0 };
+  character.userData.avatarFaceBlend = faceBlend;
 
   const loader = new THREE.TextureLoader();
   loader.load(
@@ -36,13 +38,28 @@ export function createRikinCharacter(
       const material = new THREE.MeshBasicMaterial({
         map: texture,
         transparent: true,
+        opacity: 1,
         alphaTest: 0.02,
         side: THREE.DoubleSide,
       });
+      const mirroredMaterial = material.clone();
+      mirroredMaterial.opacity = 0;
 
       const avatar = new THREE.Mesh(geometry, material);
+      avatar.name = "mohd-avatar-front";
       avatar.position.set(0, -0.12, 0);
+      const mirroredAvatar = new THREE.Mesh(geometry, mirroredMaterial);
+      mirroredAvatar.name = "mohd-avatar-facing-right";
+      mirroredAvatar.position.copy(avatar.position);
+      mirroredAvatar.scale.x = -1;
+      character.userData.applyAvatarFaceBlend = () => {
+        material.opacity = faceBlend.front;
+        mirroredMaterial.opacity = faceBlend.right;
+      };
+      character.userData.applyAvatarFaceBlend();
+
       character.add(avatar);
+      character.add(mirroredAvatar);
       onLoaded?.();
     },
     (xhr) => {
