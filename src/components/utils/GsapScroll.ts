@@ -71,7 +71,7 @@ export function setCharTimeline(
         )
         .to(
           character.scale,
-          { x: 0.8, y: 0.8, z: 0.8, delay: 3, duration: 3 },
+          { x: 1.45, y: 1.45, z: 1.45, delay: 3, duration: 3 },
           0
         )
         .fromTo(

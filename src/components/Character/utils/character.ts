@@ -41,7 +41,7 @@ export function createRikinCharacter(
       });
 
       const avatar = new THREE.Mesh(geometry, material);
-      avatar.position.set(0, -0.32, 0);
+      avatar.position.set(0, -0.2, 0);
       character.add(avatar);
       onLoaded?.();
     },
