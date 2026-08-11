@@ -75,31 +75,44 @@ const Work = () => {
         <div className="work-flex">
           {([
             {
-              name: "Project One",
-              category: "Category / Type",
+              name: "Vrinda Store Annual Report 2025",
+              category: "Excel Sales Dashboard",
               description:
-                "Short description of your project. Explain what it does, the problem it solves, and the impact it had. Replace this placeholder with your own project details.",
-              tech: "Tech, Stack, Tools",
-              link: "https://github.com/yourusername",
-              image: "/images/placeholder.webp",
+                "An interactive annual sales report for Vrinda Store with month, channel, and category filters. The dashboard tracks orders, sales amount, gender-wise purchases, order status, top-performing states, age groups, and channel contribution.",
+              tech: "Excel, Pivot Tables, Pivot Charts, Slicers, Dashboard Design, Sales Analysis",
+              image: "/images/project-vrinda-store.svg",
             },
             {
-              name: "Project Two",
-              category: "Category / Type",
+              name: "HR Analytics Dashboard",
+              category: "Employee Attrition Analysis",
               description:
-                "Short description of your project. Explain what it does, the problem it solves, and the impact it had. Replace this placeholder with your own project details.",
-              tech: "Tech, Stack, Tools",
-              link: "https://github.com/yourusername",
-              image: "/images/placeholder.webp",
+                "A workforce analytics dashboard focused on employee attrition. It summarizes employee count, attrition count, attrition rate, average age, salary, and years at company, with breakdowns by education, age, salary slab, tenure, gender, and job role.",
+              tech: "Power BI, DAX, Data Modeling, HR Analytics, KPI Cards, Donut Charts, Bar Charts",
+              image: "/images/project-hr-analytics.svg",
             },
             {
-              name: "Project Three",
-              category: "Category / Type",
+              name: "Taxi Ride Analysis",
+              category: "Transport Analytics Dashboard",
               description:
-                "Short description of your project. Explain what it does, the problem it solves, and the impact it had. Replace this placeholder with your own project details.",
-              tech: "Tech, Stack, Tools",
-              link: "https://github.com/yourusername",
-              image: "/images/placeholder.webp",
+                "A taxi trip analysis dashboard that studies total trips, average fare, revenue, distance, fare distribution by hour, fare trends, city district demand density, payment type, ratings, cancellations, and vehicle-type performance.",
+              tech: "Power BI, Data Visualization, Revenue Analysis, Trip Analytics, Geo Heatmap, KPI Tracking",
+              image: "/images/project-taxi-ride.svg",
+            },
+            {
+              name: "Token Appointment System",
+              category: "Appointment Booking Web App",
+              description:
+                "A real-time token management concept for hospitals and clinics. It helps patients book appointments, select doctors, get a token number, and track the currently serving token to reduce waiting time and improve queue flow.",
+              tech: "React, UI Design, Appointment Workflow, Token Queue, Patient Dashboard, Responsive Layout",
+              image: "/images/project-token-system.svg",
+            },
+            {
+              name: "Customer Behavior Dashboard",
+              category: "Customer Analytics Dashboard",
+              description:
+                "A customer analytics dashboard for understanding purchase behavior. It tracks total customers, average purchase amount, review rating, subscription status, revenue and sales by category, age-group performance, shipping preferences, and gender filters.",
+              tech: "Power BI, Customer Analytics, Filters, KPI Cards, Revenue Analysis, Category Analysis",
+              image: "/images/project-customer-behavior.svg",
             },
           ] as WorkProject[]).map((project, index) => (
             <div className="work-box" key={index}>

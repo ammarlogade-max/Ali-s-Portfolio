@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dcecff"/><stop offset=".55" stop-color="#f6f8ff"/><stop offset="1" stop-color="#eee2ff"/></linearGradient></defs>
+  <rect width="1200" height="680" fill="url(#bg)"/>
+  <g font-family="Segoe UI, Arial" fill="#1f2937">
+    <text x="115" y="255" font-size="54" font-weight="800">Token Appointment</text>
+    <text x="115" y="315" font-size="54" font-weight="800">System</text>
+    <text x="115" y="375" font-size="26" font-weight="800" fill="#2563eb">Book Smart, Wait Less.</text>
+    <text x="115" y="430" font-size="20" fill="#5f6b7a">Book and manage appointments with real-time</text>
+    <text x="115" y="458" font-size="20" fill="#5f6b7a">token updates for patients, doctors, and admins.</text>
+    <rect x="115" y="505" width="125" height="48" rx="10" fill="#2563eb"/><text x="177" y="536" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">Get Started</text>
+    <rect x="255" y="505" width="135" height="48" rx="10" fill="#fff"/><text x="322" y="536" text-anchor="middle" font-size="16" font-weight="700">Watch Demo</text>
+  </g>
+  <rect x="690" y="135" width="395" height="480" rx="18" fill="#fff" opacity=".95"/>
+  <rect x="690" y="135" width="395" height="56" rx="18" fill="#fbfbff"/>
+  <text x="758" y="170" font-family="Segoe UI, Arial" font-size="18" font-weight="700" fill="#374151">Book Your Appointment</text>
+  <rect x="760" y="260" width="310" height="58" rx="12" fill="#fff" stroke="#e5e7eb"/>
+  <circle cx="800" cy="289" r="20" fill="#d1d5db"/><text x="835" y="284" font-family="Segoe UI, Arial" font-size="17" font-weight="700" fill="#374151">Dr. Sarah Williams</text><text x="835" y="305" font-family="Segoe UI, Arial" font-size="12" fill="#6b7280">Cardiologist | 10 Years Experience</text>
+  <rect x="760" y="335" width="310" height="58" rx="12" fill="#2563eb"/><text x="915" y="371" text-anchor="middle" font-family="Segoe UI, Arial" font-size="17" font-weight="800" fill="#fff">Get Your Token</text>
+  <rect x="760" y="420" width="145" height="85" rx="12" fill="#fff" stroke="#e5e7eb"/><text x="832" y="452" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" font-weight="700" fill="#6b7280">Token Number</text><text x="832" y="485" text-anchor="middle" font-family="Segoe UI, Arial" font-size="32" font-weight="800" fill="#1f2937">25</text>
+  <rect x="925" y="420" width="145" height="85" rx="12" fill="#fff" stroke="#e5e7eb"/><text x="997" y="452" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" font-weight="700" fill="#6b7280">Current Token</text><text x="997" y="485" text-anchor="middle" font-family="Segoe UI, Arial" font-size="32" font-weight="800" fill="#2563eb">18</text>
+  <rect x="610" y="410" width="235" height="150" rx="18" fill="#fff" opacity=".93"/>
+  <text x="640" y="445" font-family="Segoe UI, Arial" font-size="15" font-weight="700" fill="#6b7280">Check</text>
+  <rect x="645" y="470" width="170" height="38" rx="12" fill="#fff" stroke="#eef2f7"/><circle cx="675" cy="489" r="18" fill="#d1d5db"/><text x="705" y="493" font-family="Segoe UI, Arial" font-size="12" font-weight="700">Dr. Sarah Williams</text>
+  <rect x="645" y="518" width="170" height="38" rx="12" fill="#fff" stroke="#eef2f7"/><circle cx="675" cy="537" r="18" fill="#f97316"/><text x="705" y="541" font-family="Segoe UI, Arial" font-size="12" font-weight="700">Dr. James Clark</text>
+</svg>

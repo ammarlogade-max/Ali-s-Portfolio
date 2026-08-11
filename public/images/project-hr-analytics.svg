@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071b3a"/><stop offset=".55" stop-color="#2a1437"/><stop offset="1" stop-color="#b40b12"/></linearGradient></defs>
+  <rect width="1200" height="680" fill="url(#g)"/>
+  <text x="45" y="48" font-family="Segoe UI, Arial" font-size="34" font-weight="800" fill="#fff">HR ANALYTICS DASHBOARD</text>
+  <g font-family="Segoe UI, Arial" fill="#fff">
+    <g font-size="14" font-weight="700"><text x="48" y="83">Count of Employee</text><text x="240" y="83">Attrition</text><text x="400" y="83">Attrition Rate</text><text x="610" y="83">Avg Age</text><text x="785" y="83">Avg Salary</text><text x="970" y="83">Avg Years</text></g>
+    <g stroke="#fff" fill="none" opacity=".7"><rect x="20" y="96" width="175" height="60" rx="6"/><rect x="205" y="96" width="135" height="60" rx="6"/><rect x="355" y="96" width="185" height="60" rx="6"/><rect x="555" y="96" width="175" height="60" rx="6"/><rect x="745" y="96" width="175" height="60" rx="6"/><rect x="935" y="96" width="145" height="60" rx="6"/></g>
+    <g font-size="44" font-weight="800"><text x="70" y="145">961</text><text x="235" y="145">133</text><text x="390" y="145">13.8%</text><text x="605" y="145">37.04</text><text x="785" y="145">6.28K</text><text x="970" y="145">6.86</text></g>
+  </g>
+  <g stroke="#fff" fill="none" opacity=".8"><rect x="18" y="175" width="325" height="250" rx="12"/><rect x="360" y="175" width="430" height="250" rx="12"/><rect x="805" y="185" width="375" height="230" rx="12"/><rect x="18" y="440" width="365" height="220" rx="12"/><rect x="400" y="440" width="390" height="220" rx="12"/><rect x="805" y="440" width="375" height="220" rx="12"/></g>
+  <text x="172" y="195" text-anchor="middle" font-family="Segoe UI, Arial" font-size="17" font-weight="700" fill="#fff">Attrition by Education</text>
+  <circle cx="175" cy="300" r="78" fill="#1d2ca0"/><path d="M175 300 L175 222 A78 78 0 0 1 248 326 Z" fill="#2196f3"/><path d="M175 300 L102 274 A78 78 0 0 1 150 225 Z" fill="#ed7d31"/>
+  <text x="575" y="195" text-anchor="middle" font-family="Segoe UI, Arial" font-size="17" font-weight="700" fill="#fff">Attrition by Age</text>
+  <g fill="#2196f3"><rect x="440" y="240" width="52" height="145"/><rect x="510" y="300" width="52" height="85"/><rect x="580" y="305" width="52" height="80"/><rect x="650" y="338" width="52" height="47"/><rect x="720" y="340" width="52" height="45"/></g>
+  <text x="990" y="205" text-anchor="middle" font-family="Segoe UI, Arial" font-size="18" font-weight="700" fill="#fff">Attrition by Job Role</text>
+  <g font-family="Segoe UI, Arial" font-size="14" fill="#fff"><text x="835" y="250">Laboratory Technician</text><text x="1120" y="250">62</text><text x="835" y="285">Research Scientist</text><text x="1120" y="285">47</text><text x="835" y="320">Manufacturing Director</text><text x="1120" y="320">10</text><text x="835" y="355">Healthcare Representative</text><text x="1120" y="355">9</text></g>
+  <text x="190" y="462" text-anchor="middle" font-family="Segoe UI, Arial" font-size="17" font-weight="700" fill="#fff">Attrition by Salary Slab</text>
+  <g fill="#2196f3"><rect x="80" y="492" width="210" height="28"/><rect x="80" y="535" width="55" height="28"/><rect x="80" y="578" width="40" height="28"/></g>
+  <text x="590" y="462" text-anchor="middle" font-family="Segoe UI, Arial" font-size="17" font-weight="700" fill="#fff">Attrition by Years At Company</text>
+  <path d="M440 610 C470 420 485 620 540 565 S620 575 640 608 S700 570 725 620" stroke="#f4a261" stroke-width="4" fill="none"/>
+  <text x="995" y="462" text-anchor="middle" font-family="Segoe UI, Arial" font-size="17" font-weight="700" fill="#fff">Attrition by Job Role</text>
+  <g fill="#ff7f0e"><rect x="900" y="492" width="220" height="28"/><rect x="900" y="535" width="170" height="28"/><rect x="900" y="578" width="65" height="28"/></g>
+</svg>
