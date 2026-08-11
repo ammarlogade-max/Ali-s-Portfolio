@@ -1,4 +1,5 @@
 import * as THREE from "three";
+import { GLTFLoader, DRACOLoader } from "three-stdlib";
 
 export interface CharacterRefs {
   character: THREE.Group;
@@ -12,7 +13,11 @@ export interface CharacterRefs {
   torso?: THREE.Object3D;
 }
 
-const AVATAR_IMAGE = "/images/mohd-avatar-cutout.png";
+const isMobile = () =>
+  /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ||
+  (window.innerWidth <= 1024 && "ontouchstart" in window);
+
+const AVATAR_MODEL = "/models/avatar.glb";
 
 export function createRikinCharacter(
   onProgress?: (pct: number) => void,
@@ -20,29 +25,31 @@ export function createRikinCharacter(
 ): CharacterRefs {
   const character = new THREE.Group();
   character.name = "rikin-character";
+  const mobile = isMobile();
 
-  const loader = new THREE.TextureLoader();
+  const dracoLoader = new DRACOLoader();
+  dracoLoader.setDecoderPath("/draco/");
+
+  const loader = new GLTFLoader();
+  loader.setDRACOLoader(dracoLoader);
+
   loader.load(
-    AVATAR_IMAGE,
-    (texture) => {
-      texture.colorSpace = THREE.SRGBColorSpace;
-      texture.anisotropy = 4;
-
-      const image = texture.image as HTMLImageElement;
-      const aspect = image.width / image.height;
-      const height = 1.95;
-      const width = height * aspect;
-      const geometry = new THREE.PlaneGeometry(width, height);
-      const material = new THREE.MeshBasicMaterial({
-        map: texture,
-        transparent: true,
-        alphaTest: 0.02,
-        side: THREE.DoubleSide,
+    AVATAR_MODEL,
+    (gltf) => {
+      const model = gltf.scene;
+      model.traverse((obj) => {
+        if ((obj as THREE.Mesh).isMesh) {
+          const mesh = obj as THREE.Mesh;
+          if (!mobile) {
+            mesh.castShadow = true;
+            mesh.receiveShadow = true;
+          }
+        }
       });
-
-      const avatar = new THREE.Mesh(geometry, material);
-      avatar.position.set(0, -0.2, 0);
-      character.add(avatar);
+      model.scale.setScalar(1.6);
+      model.position.set(0, -0.9, 0);
+      character.add(model);
+      dracoLoader.dispose();
       onLoaded?.();
     },
     (xhr) => {
@@ -51,7 +58,8 @@ export function createRikinCharacter(
       }
     },
     (error) => {
-      console.error("Failed to load avatar image", error);
+      console.error("Failed to load avatar model", error);
+      dracoLoader.dispose();
       onLoaded?.();
     }
   );

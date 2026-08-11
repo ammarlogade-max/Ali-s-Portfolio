@@ -41,19 +41,9 @@ export function setCharTimeline(
   if (window.innerWidth > 1024) {
     if (character) {
       tl1
-        .fromTo(
-          character.rotation,
-          { y: 0, x: 0 },
-          { y: 0.18, x: 0, duration: 1 },
-          0
-        )
-        .to(camera.position, { z: 5.9 }, 0)
-        .fromTo(
-          ".character-model",
-          { x: 0, y: "0%" },
-          { x: "-20%", y: "0%", duration: 1 },
-          0
-        )
+        .fromTo(character.rotation, { y: 0 }, { y: 0.7, duration: 1 }, 0)
+        .to(camera.position, { z: 6 }, 0)
+        .fromTo(".character-model", { x: 0 }, { x: "-25%", duration: 1 }, 0)
         .to(".landing-intro", { opacity: 0, duration: 0.4 }, 0)
         .to(".landing-info", { opacity: 0, duration: 0.4 }, 0)
         .to(".landing-intro", { y: "40%", duration: 0.8 }, 0)
@@ -70,18 +60,18 @@ export function setCharTimeline(
         .to(".about-section", { opacity: 0, delay: 3, duration: 2 }, 0)
         .fromTo(
           ".character-model",
-          { pointerEvents: "inherit", x: "-20%", y: "0%" },
-          { pointerEvents: "none", x: "-28%", y: "2%", delay: 2, duration: 5 },
+          { pointerEvents: "inherit" },
+          { pointerEvents: "none", x: "-12%", delay: 2, duration: 5 },
           0
         )
         .to(
           character.rotation,
-          { y: 0.28, x: 0.02, delay: 3, duration: 3 },
+          { y: 0.92, x: 0.12, delay: 3, duration: 3 },
           0
         )
         .to(
           character.scale,
-          { x: 1.18, y: 1.18, z: 1.18, delay: 3, duration: 3 },
+          { x: 0.8, y: 0.8, z: 0.8, delay: 3, duration: 3 },
           0
         )
         .fromTo(
@@ -100,21 +90,12 @@ export function setCharTimeline(
       tl3
         .fromTo(
           ".character-model",
-          { x: "-28%", y: "2%" },
-          { x: "-18%", y: "-55%", duration: 4, ease: "none", delay: 1 },
+          { y: "0%" },
+          { y: "-100%", duration: 4, ease: "none", delay: 1 },
           0
         )
         .fromTo(".whatIDO", { y: 0 }, { y: "15%", duration: 2 }, 0)
-        .to(
-          character.scale,
-          { x: 0.72, y: 0.72, z: 0.72, duration: 3, ease: "none", delay: 1 },
-          0
-        )
-        .to(
-          character.rotation,
-          { y: 0.34, x: -0.04, duration: 2, delay: 1 },
-          0
-        );
+        .to(character.rotation, { x: -0.04, duration: 2, delay: 1 }, 0);
     }
   } else {
     if (character) {
