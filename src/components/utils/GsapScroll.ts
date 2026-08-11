@@ -41,7 +41,7 @@ export function setCharTimeline(
   if (window.innerWidth > 1024) {
     if (character) {
       tl1
-        .fromTo(character.rotation, { y: 0 }, { y: 0.7, duration: 1 }, 0)
+        .fromTo(character.rotation, { y: 0, x: 0 }, { y: 0, x: 0, duration: 1 }, 0)
         .to(camera.position, { z: 6 }, 0)
         .fromTo(".character-model", { x: 0 }, { x: "-25%", duration: 1 }, 0)
         .to(".landing-intro", { opacity: 0, duration: 0.4 }, 0)
@@ -66,12 +66,12 @@ export function setCharTimeline(
         )
         .to(
           character.rotation,
-          { y: 0.92, x: 0.12, delay: 3, duration: 3 },
+          { y: 0, x: 0, delay: 3, duration: 3 },
           0
         )
         .to(
           character.scale,
-          { x: 0.8, y: 0.8, z: 0.8, delay: 3, duration: 3 },
+          { x: 1.45, y: 1.45, z: 1.45, delay: 3, duration: 3 },
           0
         )
         .fromTo(
@@ -95,7 +95,7 @@ export function setCharTimeline(
           0
         )
         .fromTo(".whatIDO", { y: 0 }, { y: "15%", duration: 2 }, 0)
-        .to(character.rotation, { x: -0.04, duration: 2, delay: 1 }, 0);
+        .to(character.rotation, { y: 0, x: 0, duration: 2, delay: 1 }, 0);
     }
   } else {
     if (character) {
