@@ -12,7 +12,7 @@ export interface CharacterRefs {
   torso?: THREE.Object3D;
 }
 
-const AVATAR_IMAGE = "/images/mohd-avatar.png";
+const AVATAR_IMAGE = "/images/mohd-avatar-cutout.png";
 
 export function createRikinCharacter(
   onProgress?: (pct: number) => void,
@@ -30,7 +30,7 @@ export function createRikinCharacter(
 
       const image = texture.image as HTMLImageElement;
       const aspect = image.width / image.height;
-      const height = 3.25;
+      const height = 1.95;
       const width = height * aspect;
       const geometry = new THREE.PlaneGeometry(width, height);
       const material = new THREE.MeshBasicMaterial({
@@ -41,7 +41,7 @@ export function createRikinCharacter(
       });
 
       const avatar = new THREE.Mesh(geometry, material);
-      avatar.position.set(0, 0.15, 0);
+      avatar.position.set(0, -0.32, 0);
       character.add(avatar);
       onLoaded?.();
     },
