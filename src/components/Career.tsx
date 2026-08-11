@@ -5,8 +5,8 @@ const Career = () => {
     <div className="career-section section-container">
       <div className="career-container">
         <h2>
-          My career <span>&</span>
-          <br /> experience
+          Education, experience <span>&</span>
+          <br /> certifications
         </h2>
         <div className="career-info">
           <div className="career-timeline">
@@ -15,54 +15,74 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Job Title</h4>
-                <h5>Company Name</h5>
+                <h4>Data Analyst</h4>
+                <h5>Thiranex</h5>
               </div>
-              <h3>NOW</h3>
+              <h3>
+                Jun 2026
+                <br />- Jul 2026
+              </h3>
             </div>
             <p>
-              Describe your current role and your biggest wins here. Focus on
-              impact and outcomes. Replace this placeholder with your own
-              experience.
+              Worked on data analytics projects involving data cleaning,
+              visualization and dashboard creation using Excel, SQL, Power BI
+              and Tableau, presenting data-driven insights from real-world
+              datasets.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Job Title</h4>
-                <h5>Company Name</h5>
+                <h4>Data Analytics Job Simulation</h4>
+                <h5>Deloitte Australia (Via Forage)</h5>
               </div>
-              <h3>2024</h3>
+              <h3>2025</h3>
             </div>
             <p>
-              Summarize what you did in this role and the results you delivered.
-              Replace this placeholder with your own experience.
+              Completed a Deloitte Australia job simulation covering data
+              analysis, Tableau dashboard creation, Excel-based classification,
+              forensic technology exposure and communicating business insights.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Job Title</h4>
-                <h5>Company Name</h5>
+                <h4>Microsoft Power BI Certification</h4>
+                <h5>Self-Directed Learning</h5>
               </div>
-              <h3>2022</h3>
+              <h3>
+                2024 -
+                <br />
+                Present
+              </h3>
             </div>
             <p>
-              Summarize what you did in this role and the results you delivered.
-              Replace this placeholder with your own experience.
+              Completed self-directed certification in Microsoft Power BI,
+              building interactive dashboards and KPI tracking beyond the
+              academic curriculum.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Job Title</h4>
-                <h5>Company Name</h5>
+                <h4>
+                  B.E. - Artificial Intelligence & Machine Learning
+                </h4>
+                <h5>
+                  M.H. Saboo Siddik College Of Engineering, University Of
+                  Mumbai
+                </h5>
               </div>
-              <h3>2020</h3>
+              <h3>
+                2024
+                <br />-<br />
+                2028
+              </h3>
             </div>
             <p>
-              Summarize what you did in this role and the results you delivered.
-              Replace this placeholder with your own experience.
+              Coursework spans machine learning, data structures and SQL-based
+              data workflows, applied through self-initiated data analytics and
+              ML projects.
             </p>
           </div>
         </div>
