@@ -62,8 +62,8 @@ const Loading = ({ percent }: { percent: number }) => {
       <div className={`loading-screen ${clicked ? "loading-exit" : ""}`}>
         <div className="loading-marquee">
           <Marquee>
-            <span> A Creative Builder</span> <span>A Creative Engineer</span>
-            <span> A Creative Builder</span> <span>A Creative Engineer</span>
+            <span> Aspiring AI/ML Engineer</span> <span>Aspiring Data Analyst</span>
+            <span> Aspiring AI/ML Engineer</span> <span>Aspiring Data Analyst</span>
           </Marquee>
         </div>
         <div

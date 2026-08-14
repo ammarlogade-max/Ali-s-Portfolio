@@ -75,28 +75,20 @@ const Work = () => {
         <div className="work-flex">
           {([
             {
-              name: "Vrinda Store Annual Report 2025",
-              category: "Excel Sales Dashboard",
+              name: "Customer Behavior Analysis",
+              category: "SQL Database Analysis",
               description:
-                "An interactive annual sales report for Vrinda Store with month, channel, and category filters. The dashboard tracks orders, sales amount, gender-wise purchases, order status, top-performing states, age groups, and channel contribution.",
-              tech: "Excel, Pivot Tables, Pivot Charts, Slicers, Dashboard Design, Sales Analysis",
-              image: "/images/project-vrinda-store.jpeg",
+                "A comprehensive PostgreSQL database analysis focusing on customer behavior. It queries key metrics such as revenue generation by gender, high-value discount shoppers, top-rated products, shipping fee comparisons, and subscriber vs. non-subscriber spending habits.",
+              tech: "PostgreSQL, SQL Queries, pgAdmin 4, Database Analytics, Data Profiling, Customer Insights",
+              image: "/images/project-customer-analysis.png",
             },
             {
-              name: "HR Analytics Dashboard",
-              category: "Employee Attrition Analysis",
+              name: "Temperature Prediction",
+              category: "Machine Learning & Predictive Modeling",
               description:
-                "A workforce analytics dashboard focused on employee attrition. It summarizes employee count, attrition count, attrition rate, average age, salary, and years at company, with breakdowns by education, age, salary slab, tenure, gender, and job role.",
-              tech: "Power BI, DAX, Data Modeling, HR Analytics, KPI Cards, Donut Charts, Bar Charts",
-              image: "/images/project-hr-analytics.svg",
-            },
-            {
-              name: "Taxi Ride Analysis",
-              category: "Transport Analytics Dashboard",
-              description:
-                "A taxi trip analysis dashboard that studies total trips, average fare, revenue, distance, fare distribution by hour, fare trends, city district demand density, payment type, ratings, cancellations, and vehicle-type performance.",
-              tech: "Power BI, Data Visualization, Revenue Analysis, Trip Analytics, Geo Heatmap, KPI Tracking",
-              image: "/images/project-taxi-ride.svg",
+                "A machine learning project built in Jupyter Notebook to predict temperature trends. Utilizing Random Forest Regressor and data libraries, the model evaluates historical climate data, temperature, humidity, and wind speed trends to produce high-accuracy forecasts.",
+              tech: "Python, Machine Learning, Random Forest, Jupyter Notebook, Pandas, NumPy, Scikit-Learn, Predictive Modeling",
+              image: "/images/project-temperature-prediction.png",
             },
             {
               name: "Token Appointment System",
@@ -104,7 +96,7 @@ const Work = () => {
               description:
                 "A real-time token management concept for hospitals and clinics. It helps patients book appointments, select doctors, get a token number, and track the currently serving token to reduce waiting time and improve queue flow.",
               tech: "React, UI Design, Appointment Workflow, Token Queue, Patient Dashboard, Responsive Layout",
-              image: "/images/project-token-system.svg",
+              image: "/images/project-token-system.png",
             },
             {
               name: "Customer Behavior Dashboard",
@@ -112,7 +104,15 @@ const Work = () => {
               description:
                 "A customer analytics dashboard for understanding purchase behavior. It tracks total customers, average purchase amount, review rating, subscription status, revenue and sales by category, age-group performance, shipping preferences, and gender filters.",
               tech: "Power BI, Customer Analytics, Filters, KPI Cards, Revenue Analysis, Category Analysis",
-              image: "/images/project-customer-behavior.svg",
+              image: "/images/project-customer-behavior.png",
+            },
+            {
+              name: "Vrinda Store Annual Report 2025",
+              category: "Excel Sales Dashboard",
+              description:
+                "An interactive annual sales report for Vrinda Store with month, channel, and category filters. The dashboard tracks orders, sales amount, gender-wise purchases, order status, top-performing states, age groups, and channel contribution.",
+              tech: "Excel, Pivot Tables, Pivot Charts, Slicers, Dashboard Design, Sales Analysis",
+              image: "/images/project-vrinda-store.png",
             },
           ] as WorkProject[]).map((project, index) => (
             <div className="work-box" key={index}>
